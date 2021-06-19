@@ -5,39 +5,116 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <style>
+        ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        background-color: lightslategray;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+      
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px; 
+        text-decoration: none;
+      }
+      
+      li a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+      
+      </style>
+      <title>React App</title>
+      <style>
+        table, th, td {
+          margin-left: 120px;
+          margin-top: 110px;
+          padding:20px;
+          border: 1px solid black;
+        }
+        </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div class="vlconatainer">
+    <ul>
+      <li><a class="active" href="#agripurmanagement">Agri-Purchase Management</a></li>
+      <hr>
+      <li><a href="#master-maintenance">Agri-Input Master Maintenance</a></li>
+      <hr>
+      <li><a href="#maintenance">Supplier Master Maintenance</a></li>
+      <hr>
+      <li><a href="#request">Agri-Input Purchase Request</a></li>
+      <hr>
+      <li><a href="#Tax-master maintenance">Tax-Master Maintenance</a></li>
+          </ul>
+          </div>
+          <table>
+            <tr>
+            <th> </th>
+            <th>Agri-Input Category</th>
+            <th>Product-Image</th>
+            <th>Product-Description</th>
+            <th>Order-quantity</th>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>Seeds/Seedlings</td>
+            <td> </td>
+            <td>Chin Sakata651(1500 seeds)</td>
+            <td>26</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Nutrients/Fertilizers</td>
+            <td> </td>
+            <td>Acme brand fert A/B Set-50kg</td>
+            <td>114</td>
+            </tr>
+            <tr>
+              <td>3</td>
+            <td>Pesticides/Fungicides</td>
+            <td> </td>
+            <td>Valients ME(30ml)</td>
+            <td>40</td>
+            </tr>
+            <tr>
+              <td>4</td>
+            <td>Growing medium</td>
+            <td> </td>
+            <td>Acme Brand cocopeat(30kg) </td>
+            <td>20</td>
+            </tr>
+            <tr>
+              <td>5</td>
+            <td>Growing Medium</td>
+            <td> </td>
+            <td>Acme brand cocohusk(50kg)</td>
+            <td>50</td>
+            </tr>
+            <tr>
+              <td>6</td>
+            <td>pesticides/fungicides</td>
+            <td> </td>
+            <td>Decis(1L)</td>
+            <td>4</td>
+            </tr>
+            </table>
+      </body>
 </html>
